@@ -1,0 +1,2 @@
+ogc-bookmarks-geowidget
+=======================
