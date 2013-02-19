@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+        <title>Genasys</title>
+
+        <!-- Javascript Code -->
+        <script language="javascript">
+
+            function use(packages) {
+                packages = packages.split('.');
+                var parent = window;
+
+                for (var i=0; i < packages.length; i++) {
+                    if(!(packages[i] in parent)) {
+                        parent[packages[i]] = {};
+                    }
+                    parent = parent[packages[i]];
+                }
+            }
+
+            function _(key) {
+                return key;
+            }
+
+            function init() {
+                new genasys.Gadget();
+            }
+
+        </script>
+
+        <!-- Libraries -->
+        <script type="text/javascript" src="/ezweb/js/EzWebAPI/EzWebAPI.js"></script>
+        <script type="text/javascript" src="/ezweb/js/EzWebAPI_ext/EzWebAPI_ext.js"></script>
+        <script type="text/javascript" src="js/lib/Prototype-1.7/prototype.js"></script>
+
+        <!-- Initial params -->
+        <script type="text/javascript" src="js/initialServers.js"></script>
+        <script type="text/javascript" src="js/languages.js"></script>
+
+        <!-- UI -->
+        <script type="text/javascript" src="js/genasys/ui/MessageManager.js"></script>
+        <script type="text/javascript" src="css/styledselect.js"></script>
+        <script type="text/javascript" src="js/genasys/ui/StyledOption.js"></script>
+        <script type="text/javascript" src="js/genasys/ui/StyledSelect.js"></script>
+        <script type="text/javascript" src="js/genasys/ui/UIUtils.js"></script>
+
+        <!-- Gadget -->
+        <script type="text/javascript" src="js/genasys/Gadget.js"></script>
+
+        <!-- Events -->
+        <script type="text/javascript" src="js/conwet/events/Slot.js"></script>
+        <script type="text/javascript" src="js/conwet/events/Event.js"></script>
+
+        <!-- CSS Style -->
+        <link rel="stylesheet" type="text/css" href="css/message.css"></link>
+        <link rel="stylesheet" type="text/css" href="css/styledselect.css"></link>
+        <link rel="stylesheet" type="text/css" href="css/default.css"></link>
+
+    </head>
+    <body onload="javascript:init();">
+        <div id="container"></div>
+    </body>
+</html>

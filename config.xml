@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template xmlns="http://morfeo-project.org/2007/Template">
+    <Catalog.ResourceDescription>
+        <Vendor>CoNWeT</Vendor>
+        <Name>WMS-Nomenclator-GeoRSS Catalogue</Name>
+        <DisplayName>WMS-Nomenclator-GeoRSS Catalogue</DisplayName>
+        <Version>0.1</Version>
+        <Author>jmostazo</Author>
+        <Mail>jmostazo@fi.upm.es</Mail>
+        <Description>This widget provides a list of WMS, Nomenclator and GeoRSS services, ready to be wired to other widgets. The user can also add, edit or remove services to the list.</Description>
+        <ImageURI>img/catalogo.png</ImageURI>
+        <iPhoneImageURI>img/catalogo.png</iPhoneImageURI>
+        <WikiURI>http://hercules.ls.fi.upm.es/public/conwet/ogf.html#catalogo</WikiURI>
+    </Catalog.ResourceDescription>
+
+    <Platform.Preferences>
+    </Platform.Preferences>
+
+    <Platform.StateProperties>
+        <Property name="services" type="text" label="Services"/>
+    </Platform.StateProperties>
+
+    <Platform.Wiring>
+        <Event name="service_info_event" type="text" label="Service info" friendcode="service_info"/>
+    </Platform.Wiring>
+
+    <Platform.Link>
+        <XHTML href="index.html"/>
+    </Platform.Link>
+
+    <Platform.Rendering width="4" height="14"/>
+
+    <Platform.Context>
+    </Platform.Context>
+</Template>
