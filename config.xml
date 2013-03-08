@@ -2,8 +2,8 @@
 <Template xmlns="http://morfeo-project.org/2007/Template">
     <Catalog.ResourceDescription>
         <Vendor>CoNWeT</Vendor>
-        <Name>WMS-Nomenclator-GeoRSS Catalogue</Name>
-        <DisplayName>WMS-Nomenclator-GeoRSS Catalogue</DisplayName>
+        <Name>ogc-service-registry</Name>
+        <DisplayName>OGC Service Registry</DisplayName>
         <Version>0.1</Version>
         <Author>jmostazo</Author>
         <Mail>jmostazo@fi.upm.es</Mail>
