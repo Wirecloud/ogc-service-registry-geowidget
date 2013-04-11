@@ -39,7 +39,13 @@ var initialServers = [
             {'name': 'Imágenes Landsat 7 y SPOT', 'url': 'http://www.idee.es/wms/IDEE-Landsat/IDEE-Landsat'},
             {'name': 'IDE Gipuzkoa - Hidrología', 'url': 'http://urhweb.gipuzkoa.net/geowebcache/service/wms'},
             {'name': 'IDE Gipuzkoa - Información territorial', 'url': 'http://b5m.gipuzkoa.net/ogc/wms/gipuzkoa_wms'},
-            {'name': 'Junta de Andalucía', 'url': 'http://www.juntadeandalucia.es/servicios/mapas/callejero/wms'}
+            {'name': 'Junta de Andalucía', 'url': 'http://www.juntadeandalucia.es/servicios/mapas/callejero/wms'},
+            {'name': 'Cuadriculas Cartograficas IGN', 'url': 'http://www.ign.es/wms-inspire/cuadriculas'},
+            {'name': 'Camino de Santiago', 'url': 'http://www.ign.es/wms-inspire/camino-santiago'},
+            {'name': 'Redes Geodesicas IGN', 'url': 'http://www.ign.es/wms-inspire/redes-geodesicas'},
+            {'name': 'Información Sismica y Volcanica', 'url': 'http://www.ign.es/wms-inspire/geofisica'},
+            {'name': 'Unidades Administrativas de España', 'url': 'http://www.ign.es/wms-inspire/unidades-administrativas'},
+            {'name': 'Modelos Digitales del Terreno España', 'url': 'http://www.ign.es/wms-inspire/mdt'}         
         ]
     },
     {
@@ -57,7 +63,9 @@ var initialServers = [
             {'name' : 'CartoCiudad Municipio', 'url': 'http://www.cartociudad.es/wfs-municipio/services', 'type': 'MNE'},
             {'name' : 'CartoCiudad Nomenclator de Portal', 'url': 'http://www.cartociudad.es/wfs-portal/services', 'type': 'MNE'},
             {'name' : 'CartoCiudad Sección Censal', 'url': 'http://www.cartociudad.es/wfs-seccion/services', 'type': 'MNE'},
-            {'name' : 'CartoCiudad Nomenclator del Vial', 'url': 'http://www.cartociudad.es/wfs-vial/services', 'type': 'MNE'}
+            {'name' : 'CartoCiudad Nomenclator del Vial', 'url': 'http://www.cartociudad.es/wfs-vial/services', 'type': 'MNE'},
+            {'name' : 'Unidades Administrativas', 'url': 'http://www.ign.es/wfs/unidades-administrativas', 'type': 'MNE'},
+            {'name' : 'Redes Geodésicas IGN', 'url': 'http://www.ign.es/wfs/redes-geodesicas', 'type': 'MNE'}
         ]
     },
     {
