@@ -43,21 +43,37 @@ var initialServers = [
         ]
     },
     {
+        "type"    : "WMSC",
+        "name"    : "WMSC Services",
+        "services": [
+            {'name': 'CartoCiudad', 'url': 'http://www.cartociudad.es/wms-c/CARTOCIUDAD/CARTOCIUDAD'},
+            {'name': 'Cartografía raster', 'url': 'http://www.ign.es/wms-c/mapa-raster'},
+            {'name': 'Mapa base de España', 'url': 'http://www.ign.es/wms-c/ign-base'},
+            {'name': 'MPNOA máxima actualidad', 'url': 'http://www.ign.es/wms-c/PNOA/PNOA'},
+            {'name': 'Callejero Digital de Andalucía', 'url': 'http://www.juntadeandalucia.es/servicios/mapas/callejero/wms-tiled'},
+            {'name': 'Ortofotografía 2010-2011', 'url': 'http://www.ideandalucia.es/geowebcache/service/wms'},
+            {'name': 'Municipio - Zaragoza | Mapa Base (Ayuntamiento de Zaragoza)', 'url': 'http://idezar.zaragoza.es/IDEZar_Base_Tiled/WMSTileCache'}
+        ]
+    },
+    {
         "type"    : "WFS",
-        "name"    : "Nomenclátor Services",
-        "service_types": ["MNE", "EGN"],
+        "name"    : "Nomenclator Services",
+        "service_types": ["MNE", "EGN", "GEONAMES", "INSPIRE"],
         "services": [
             {'name' : 'Nomenclátor Geográfico Conciso de España', 'url': 'http://www.idee.es/IDEE-WFS-Nomenclator-NGC/services', 'type': 'MNE'},
-            {'name' : 'Nomenclátor NOMGEO', 'url': 'http://www.idee.es/IDEE-WFS-Nomenclator-NG/services', 'type': 'MNE'},
-            {'name' : 'Información geodésica', 'url': 'http://www.idee.es/IGN-WFS-Geodesia/ogcwebservice', 'type': 'MNE'},
-            {'name' : 'Información geodésica ', 'url': 'http://www.idee.es/IGN-WFS-Geodesia/ogcwebservice', 'type': 'MNE'},
-            {'name' : 'EGN - Nomenclátor Geográfico Conciso de España', 'url': 'http://www.idee.es/IDEE-WFS-EGN-Nomenclator-NGC/services', 'type': 'EGN'},
+            //{'name' : 'Nomenclátor NOMGEO', 'url': 'http://www.idee.es/IDEE-WFS-Nomenclator-NG/services', 'type': 'MNE'},
+            //{'name' : 'Información geodésica', 'url': 'http://www.idee.es/IGN-WFS-Geodesia/ogcwebservice', 'type': 'MNE'},
+            //{'name' : 'Información geodésica ', 'url': 'http://www.idee.es/IGN-WFS-Geodesia/ogcwebservice', 'type': 'MNE'},
+            //{'name' : 'EGN - Nomenclátor Geográfico Conciso de España', 'url': 'http://www.idee.es/IDEE-WFS-EGN-Nomenclator-NGC/services', 'type': 'EGN'},
             {'name' : 'CartoCiudad Código Postal', 'url': 'http://www.cartociudad.es/wfs-codigo/services', 'type': 'MNE'},
             {'name' : 'CartoCiudad Distrito Censal', 'url': 'http://www.cartociudad.es/wfs-distrito/services', 'type': 'MNE'},
             {'name' : 'CartoCiudad Municipio', 'url': 'http://www.cartociudad.es/wfs-municipio/services', 'type': 'MNE'},
             {'name' : 'CartoCiudad Nomenclator de Portal', 'url': 'http://www.cartociudad.es/wfs-portal/services', 'type': 'MNE'},
-            {'name' : 'CartoCiudad Sección Censal', 'url': 'http://www.cartociudad.es/wfs-seccion/services', 'type': 'MNE'},
-            {'name' : 'CartoCiudad Nomenclator del Vial', 'url': 'http://www.cartociudad.es/wfs-vial/services', 'type': 'MNE'}
+            //{'name' : 'CartoCiudad Sección Censal', 'url': 'http://www.cartociudad.es/wfs-seccion/services', 'type': 'MNE'},
+            //{'name' : 'CartoCiudad Nomenclator del Vial', 'url': 'http://www.cartociudad.es/wfs-vial/services', 'type': 'MNE'},
+            {'name' : 'GeoNames', 'url': 'http://api.geonames.org/search', 'type': 'GEONAMES'},
+            {'name' : 'NGCE-Inspire', 'url': 'http://www.ign.es/wfs-inspire/ngce', 'type': 'INSPIRE'},
+            {'name' : 'Cartociudad-Inspire', 'url': 'http://www.cartociudad.es/wfs-inspire/direcciones', 'type': 'INSPIRE'}
         ]
     },
     {
@@ -70,4 +86,12 @@ var initialServers = [
             {'name': '20 Minutos', 'url': 'http://ws.geonames.org/rssToGeoRSS?feedUrl=http://20minutos.feedsportal.com/c/32489/f/478284/index.rss'}
         ]
     },
+    {
+        "type"    : "CSW",
+        "name"    : "CSW Services",
+        "service_types": ["CSW"],
+        "services": [
+            {'name': 'IGN CSW Inspire', 'url': 'http://www.ign.es/csw-inspire/srv/es/csw', 'type': 'CSW'},
+         ]
+    }
 ];

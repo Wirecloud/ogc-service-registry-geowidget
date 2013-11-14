@@ -2,9 +2,9 @@
 <Template xmlns="http://morfeo-project.org/2007/Template">
     <Catalog.ResourceDescription>
         <Vendor>CoNWeT</Vendor>
-        <Name>WMS-Nomenclator-GeoRSS Catalogue</Name>
-        <DisplayName>WMS-Nomenclator-GeoRSS Catalogue</DisplayName>
-        <Version>0.1</Version>
+        <Name>OGC-Service-Registry</Name>
+        <DisplayName>OGC Service Registry</DisplayName>
+        <Version>0.2.1</Version>
         <Author>jmostazo</Author>
         <Mail>jmostazo@fi.upm.es</Mail>
         <Description>This widget provides a list of WMS, Nomenclator and GeoRSS services, ready to be wired to other widgets. The user can also add, edit or remove services to the list.</Description>
@@ -21,15 +21,13 @@
     </Platform.StateProperties>
 
     <Platform.Wiring>
-        <Event name="service_info_event" type="text" label="Service info" friendcode="service_info"/>
+        <OutputEndpoint name="service_info_event" type="text" label="Service info" friendcode="service_info"/>
     </Platform.Wiring>
 
     <Platform.Link>
-        <XHTML href="index.html"/>
+        <XHTML use-platform-style="true" href="index.html"/>
     </Platform.Link>
 
     <Platform.Rendering width="4" height="14"/>
-
-    <Platform.Context>
-    </Platform.Context>
+    
 </Template>
