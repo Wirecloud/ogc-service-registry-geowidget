@@ -290,7 +290,7 @@
                 service.service_type = type;
             }
 
-            this.serviceInfoEvent.send(Object.toJSON(service));
+            MashupPlatform.wiring.pushEvent("service_info_event", JSON.stringify(service));
         },
 
         _updateServiceSelect: function() {
