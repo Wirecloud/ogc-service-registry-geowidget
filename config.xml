@@ -4,7 +4,7 @@
         <Vendor>CoNWeT</Vendor>
         <Name>OGC-Service-Registry</Name>
         <DisplayName>OGC Service Registry</DisplayName>
-        <Version>0.2.1</Version>
+        <Version>0.2.2</Version>
         <Author>jmostazo</Author>
         <Mail>jmostazo@fi.upm.es</Mail>
         <Description>This widget provides a list of WMS, Nomenclator and GeoRSS services, ready to be wired to other widgets. The user can also add, edit or remove services to the list.</Description>

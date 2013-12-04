@@ -56,27 +56,6 @@ var initialServers = [
         ]
     },
     {
-        "type"    : "WFS",
-        "name"    : "Nomenclator Services",
-        "service_types": ["MNE", "EGN", "GEONAMES", "INSPIRE"],
-        "services": [
-            {'name' : 'Nomenclátor Geográfico Conciso de España', 'url': 'http://www.idee.es/IDEE-WFS-Nomenclator-NGC/services', 'type': 'MNE'},
-            //{'name' : 'Nomenclátor NOMGEO', 'url': 'http://www.idee.es/IDEE-WFS-Nomenclator-NG/services', 'type': 'MNE'},
-            //{'name' : 'Información geodésica', 'url': 'http://www.idee.es/IGN-WFS-Geodesia/ogcwebservice', 'type': 'MNE'},
-            //{'name' : 'Información geodésica ', 'url': 'http://www.idee.es/IGN-WFS-Geodesia/ogcwebservice', 'type': 'MNE'},
-            //{'name' : 'EGN - Nomenclátor Geográfico Conciso de España', 'url': 'http://www.idee.es/IDEE-WFS-EGN-Nomenclator-NGC/services', 'type': 'EGN'},
-            {'name' : 'CartoCiudad Código Postal', 'url': 'http://www.cartociudad.es/wfs-codigo/services', 'type': 'MNE'},
-            {'name' : 'CartoCiudad Distrito Censal', 'url': 'http://www.cartociudad.es/wfs-distrito/services', 'type': 'MNE'},
-            {'name' : 'CartoCiudad Municipio', 'url': 'http://www.cartociudad.es/wfs-municipio/services', 'type': 'MNE'},
-            {'name' : 'CartoCiudad Nomenclator de Portal', 'url': 'http://www.cartociudad.es/wfs-portal/services', 'type': 'MNE'},
-            //{'name' : 'CartoCiudad Sección Censal', 'url': 'http://www.cartociudad.es/wfs-seccion/services', 'type': 'MNE'},
-            //{'name' : 'CartoCiudad Nomenclator del Vial', 'url': 'http://www.cartociudad.es/wfs-vial/services', 'type': 'MNE'},
-            {'name' : 'GeoNames', 'url': 'http://api.geonames.org/search', 'type': 'GEONAMES'},
-            {'name' : 'NGCE-Inspire', 'url': 'http://www.ign.es/wfs-inspire/ngce', 'type': 'INSPIRE'},
-            {'name' : 'Cartociudad-Inspire', 'url': 'http://www.cartociudad.es/wfs-inspire/direcciones', 'type': 'INSPIRE'}
-        ]
-    },
-    {
         "type"    : "RSS",
         "name"    : "GeosRSS Services",
         "services": [
